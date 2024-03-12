@@ -1,0 +1,27 @@
+{
+  "name": "sample-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sample-test": "npx playwright test tests/sample_test.js",
+    "postinstall": "npm update browserstack-node-sdk",
+    "sample-test-browserstack": "npx browserstack-node-sdk playwright test tests/sample_test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.11.25",
+    "browserstack-local": "^1.5.1",
+    "browserstack-node-sdk": "^1.31.25",
+    "playwright": "1.39.0",
+    "prettier": "2.8.8"
+  },
+  "dependencies": {
+    "@percy/cli": "^1.28.1",
+    "@percy/playwright": "^1.0.4",
+    "xml2js": "^0.6.2"
+  }
+}
