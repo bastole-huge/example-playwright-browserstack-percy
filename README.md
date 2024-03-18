@@ -9,7 +9,8 @@
 * Clone the repo and run `cd example-playwright-browserstack-percy`
 * Update `userName` and `accessKey` in file browerstack.yml with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
 * Update `percy:token` in file .percy.yml with the token from your Percy project [Percy Token](https://percy.io/11904dec/Darling-Ingredients/settings)
-* Run `npm i`
+* Run `npm install`
+* Run `npm update`
 
 ## Running your tests on BrowserStack
 

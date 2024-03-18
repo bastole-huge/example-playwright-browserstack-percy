@@ -1,0 +1,45 @@
+version: 2
+percy:
+  token: 
+  defer-uploads: false
+snapshot:
+  widths: [390, 428, 899, 900, 1280, 1440, 1920]
+  min-height: 1024 # px
+  scope: '.main'
+  # percy-css: |
+  #   iframe {
+  #     display: none;
+  #   }
+  enableLayout: true
+  enable-javascript: true
+  freeze-animated-image: true
+  full-Page: true
+discovery:
+  request-headers:
+    x-vercel-protection-bypass: 'abc'
+# static:
+#   base-url: /blog/
+#   files: '**/*.html'
+#   ignore: '**/*.htm'
+# discovery:
+  # allowed-hostnames:
+  #   - cdn.example.com
+  # disallowed-hostnames:
+  #   - ad.network.net
+  # device-pixel-ratio: 2
+  # authorization:
+  #   username: "user"
+  #   password: "pass"
+  # request-headers:
+  #   Authorization: 'Basic dXNlcm5hbWU6cGFzc3dvcmQ='
+  # network-idle-timeout: 150 # ms
+  # disable-cache: false  # default
+  # concurrency: 15
+  # launch-options:
+  # 	executable: '/path/to/chromium/executable'
+  #   headless: true # default
+  #   args: [] # browser arguments/flags
+    timeout: 3600000 # default
+upload:
+  files: "**/*.{png,jpg,jpeg}"
+  ignore: ""
